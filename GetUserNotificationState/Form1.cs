@@ -14,15 +14,7 @@ namespace GetUserNotificationState
 
         private void BtnGetState_Click(object sender, EventArgs e)
         {
-            if (ConcentrationWizardLibrary.GetConcentrationWizardName() == ConcentrationWizardLibrary.ConcentrationWizardName.Focus_Assist)
-            { TxtBxState.Text = ConcentrationWizardLibrary.GetFocusAssistState().ToString(); }
-            else
-            { TxtBxState.Text = ConcentrationWizardLibrary.GetQuietHoursState().ToString(); }
-        }
-
-        private void BtnGetFeatureName_Click(object sender, EventArgs e)
-        {
-            TxtBxFeatureName.Text = ConcentrationWizardLibrary.GetConcentrationWizardName().ToString();
+            TxtBxState.Text = FocusAssistLib.GetFocusAssistState().ToString();
         }
     }
 }
