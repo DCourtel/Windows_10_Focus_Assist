@@ -61,14 +61,14 @@ namespace FocusAssistLibrary
         /// <summary>
         /// Returns the name of the feature used by the current Windows installation. (Quiet Hours or Focus Assist)
         /// </summary>
-        /// <returns>Returns Quiet Hours if Windows build is < 17083, otherwhile, Focus Assist.</returns>
+        /// <returns>Returns Quiet Hours if Windows build is < 17083, otherwise, Focus Assist.</returns>
         public static ConcentrationWizardName GetConcentrationWizardName()
         {
             return (GetWindowsCurrentBuildNumber() >= 17083 ? ConcentrationWizardName.Focus_Assist : ConcentrationWizardName.Quiet_Hours);
         }
 
         /// <summary>
-        /// Returns the state of Focus Assist if available on this computer. Returns <see cref="FocusAssistState.FAILED"/> otherwhile.
+        /// Returns the state of Focus Assist if available on this computer. Returns <see cref="FocusAssistState.FAILED"/> otherwise.
         /// </summary>
         /// <returns></returns>
         public static FocusAssistState GetFocusAssistState()
