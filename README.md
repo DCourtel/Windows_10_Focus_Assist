@@ -1,4 +1,4 @@
-# Windows 10 Concentration Wizard
+# Windows 10 Focus Assist Library
 
 A .Net library to get the state of Focus Assist on Windows 10.
 
